@@ -1,0 +1,18 @@
+name: g6-projectpreflight # You can also change this to another name to avoid warning with existing group. 
+services:
+  backend:
+    container_name: g6-backend
+    build: .
+    ports:
+      - ${PORT}:3000
+    networks:
+      - g6-net
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_PORT=${POSTGRES_PORT}
+      - POSTGRES_HOST=${POSTGRES_HOST}
+      - POSTGRES_APP_USER=${POSTGRES_APP_USER}
+      - POSTGRES_APP_PASSWORD=${POSTGRES_APP_PASSWORD}
+networks:
+  g6-net: # Check by using `docker network ls` command
+    external: true
