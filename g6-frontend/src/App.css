@@ -1,16 +1,11 @@
-/* สไตล์ทั่วไปของไอเท็ม */
 .todo-item {
     display: flex;
     gap: 0.5rem;
     transition: opacity 0.3s ease;
-    /* การเปลี่ยนแปลงความโปร่งใสอย่างนุ่มนวล */
 }
 
-/* สไตล์ของไอเท็มที่ถูกทำเครื่องหมาย */
 .todo-item.done {
     opacity: 0.5;
-    /* ความโปร่งใสลดลง */
     text-decoration: none;
-    /* ไม่มีการขีดทิ้ง */
 }
 

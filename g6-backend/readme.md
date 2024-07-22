@@ -1,3 +1,6 @@
+เปลี่ยน .env.example -> .env
+เปลี่ยน .env.test.example -> env.test
+
 #Packages
 npm init -y
 npm i express cors helmet

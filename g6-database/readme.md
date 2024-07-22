@@ -1,3 +1,4 @@
+เปลี่ยน .env.example -> .env
 docker compose up -d
 
 DB user management

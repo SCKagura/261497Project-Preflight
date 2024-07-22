@@ -1,3 +1,6 @@
+เปลี่ยน .env.example -> .env
+เปลี่ยน .env.test.example -> .env.test
+
 npm i
 npm i dayjs axios @picocss/pico
 npm run dev

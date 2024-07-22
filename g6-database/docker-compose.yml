@@ -16,7 +16,7 @@ services:
 
 volumes:
   g6-data:
-
+    external: true
 networks:
   g6-net:
     external: true
