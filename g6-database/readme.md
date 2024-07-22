@@ -13,11 +13,15 @@ GRANT ALL ON DATABASE g6db TO appuser;
 GRANT ALL ON SCHEMA public TO appuser;
 GRANT ALL ON SCHEMA drizzle TO appuser;
 
+## ถ้าเริ่มใหม่จาก 0 ห้ามทำ
+
 #Setting up Drizzle
 npm init -y
 npm i drizzle-orm postgres dotenv
 npm i -D drizzle-kit
 npm i typescript ts-node tsconfig-paths
+
+###
 
 npx drizzle-kit push
 npx drizzle-kit generate

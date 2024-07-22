@@ -6,6 +6,8 @@ npm i dayjs axios @picocss/pico
 npm run dev
 docker compose --env-file ./.env.test up -d --force-recreate --build
 
+## Repo Dockerhub ของตัวเองเน้อ
+
 #Tag image
 docker tag g6-projectpreflight-frontend sckagura/g6-frontend:latest
 #Push image
