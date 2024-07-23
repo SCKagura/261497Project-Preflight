@@ -1,12 +1,13 @@
-name: g6-projectpreflight # You can also change this to another name to avoid warning with existing group. 
+name: g6
 services:
   backend:
-    container_name: g6-backend
+    container_name: ${PROJECT_NAME}-backend
     build: .
     ports:
       - ${PORT}:3000
     networks:
-      - g6-net
+      - ${PROJECT_NAME}-net
+    image: ${BACKEND_IMAGE_NAME}
     environment:
       - POSTGRES_DB=${POSTGRES_DB}
       - POSTGRES_PORT=${POSTGRES_PORT}

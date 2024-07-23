@@ -24,7 +24,7 @@ docker compose --env-file ./.env.test up -d --force-recreate --build
 
 ## Repo Dockerhub ของตัวเองเน้อ
 
-docker tag g6-projectpreflight-backend sckagura/g6-backend:latest
+docker tag g6-backend sckagura/g6-backend:latest
 docker login
 #Push image
 docker push sckagura/g6-backend:latest
