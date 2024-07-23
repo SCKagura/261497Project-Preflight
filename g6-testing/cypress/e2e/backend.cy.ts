@@ -17,7 +17,7 @@ describe("Backend", () => {
       method: "GET",
       url: `${url}/todo`,
     }).then((res) => {
-      // cy.log(JSON.stringify(res));
+      cy.log(JSON.stringify(res));
       expect(res.headers).to.not.have.property("access-control-allow-origin");
     });
   });

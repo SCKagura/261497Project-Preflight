@@ -12,3 +12,7 @@ docker compose --env-file ./.env.test up -d --force-recreate --build
 docker tag g6-frontend sckagura/g6-frontend:latest
 #Push image
 docker push sckagura/g6-frontend:latest
+
+## CypressTest
+
+docker compose --env-file ./.env.testcypress up -d --force-recreate --build

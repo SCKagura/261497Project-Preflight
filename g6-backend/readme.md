@@ -28,3 +28,7 @@ docker tag g6-backend sckagura/g6-backend:latest
 docker login
 #Push image
 docker push sckagura/g6-backend:latest
+
+## CypressTest
+
+docker compose --env-file ./.env.testcypress up -d --force-recreate --build
